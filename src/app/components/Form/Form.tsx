@@ -19,7 +19,7 @@ export default function Form() {
         birthDate: ""
     });
 
-    const validation = (name, value) => {
+    const validation = (name:any, value:any) => {
         switch (name) {
             case "name":
                 if (!value.trim())
@@ -52,7 +52,7 @@ export default function Form() {
         }
     }
 
-    const handleChange = (e) => {
+    const handleChange = (e:any) => {
         const { name, value } = e.target;
 
         setFormData({
