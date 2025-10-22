@@ -6,7 +6,15 @@ import { useEffect, useState } from "react";
 import { fetchProducts } from "../../services/client/products";
 
 export default function ProductList() {
-    const [products, setProducts] = useState([]);
+    const [products, setProducts] = useState<Product[]>([]);
+
+    interface Product {
+        _id: string;
+        title: string;
+        price: number;
+        img: string;
+        desc: string;
+    }
 
     useEffect(() => {
         fetchProducts()
