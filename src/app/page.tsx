@@ -2,12 +2,13 @@ import Image from "next/image";
 import Header from "./components/Header/Header";
 import Card from "./components/Card/Card";
 import Form from "./components/Form/Form";
+import ProductList from "./components/ProductList/ProductList";
 
 export default function Home() {
   return (
     <main>
       <Header />
-      <div className="cards-container">
+      {/* <div className="cards-container">
 
         <Card
           image="https://www.factory54.co.il/dw/image/v2/BFLR_PRD/on/demandware.static/-/Sites-master-catalog/default/dw15693d68/images/new/870414327/870414327_L%20T.jpg?sw=476&sh=714"
@@ -29,8 +30,9 @@ export default function Home() {
           description="Tailored blazer, made of a cotton and viscose blend in black with white embroidery and cuffs."
           price={1990}
         />
-      </div>
+      </div> */}
 
+      <ProductList />
       <Form />
     </main>
   );
