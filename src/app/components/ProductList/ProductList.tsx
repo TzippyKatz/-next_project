@@ -37,3 +37,4 @@ export default function ProductList() {
         </div>
     );
 }
+//add Environment Variables to vercel - check
