@@ -1,9 +1,8 @@
 import { MongoClient, ServerApiVersion } from "mongodb";
 
-const MONGO_PASSWORD = process.env.MONGO_PASSWORD;
+const uri = process.env.MONGO_URI;
+console.log("Connected to MongoDB");
 
-console.log("My secret code is:", MONGO_PASSWORD);
-const uri = `mongodb+srv://zk6722355:${MONGO_PASSWORD}@tzippy.qkrolde.mongodb.net/?retryWrites=true&w=majority&authSource=admin`;
 const DB_NAME = "ShopDB";
 
 let client;
